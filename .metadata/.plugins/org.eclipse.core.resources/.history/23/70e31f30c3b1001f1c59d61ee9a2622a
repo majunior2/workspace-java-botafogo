@@ -1,0 +1,26 @@
+package zoo;
+
+public class App {
+
+	public static void main(String[] args) {
+		Gato gato = new Gato();
+		
+		System.out.print("Digite o peso do gato em kg: ");
+        double peso = scanner.nextDouble();
+        
+        if (peso <= 3) {
+            System.out.println("O gato é pequeno.");
+        } else if (peso > 3 && peso <= 5) {
+            System.out.println("O gato é médio.");
+        } else {
+            System.out.println("O gato é grande.");
+        }
+		gato.cor = "Laranja";
+		gato.raca = "Vira lata";
+		gato.peso = 10;
+		gato.saltar();
+		gato.emitirSom();
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package zoo;
+
+public class App {
+
+	public static void main(String[] args) {
+		Gato gato = new Gato();
+		
+		System.out.print("Digite o peso do gato em kg: ");
+        
+        
+        
+		gato.cor = "Laranja";
+		gato.raca = "Vira lata";
+		gato.peso = 10;
+		gato.saltar();
+		gato.emitirSom();
+
+	}
+
+}

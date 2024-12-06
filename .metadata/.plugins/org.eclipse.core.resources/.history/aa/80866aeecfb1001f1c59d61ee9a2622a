@@ -1,0 +1,16 @@
+package zoo;
+
+public class App {
+
+	public static void main(String[] args) {
+		Gato gato = new Gato();
+
+		gato.setcor = ("Laranja");
+		gato.setraca = ("Vira lata");
+		gato.setpeso = (2);
+		gato.setsaltar();
+		gato.emitirSom();
+
+	}
+
+}
