@@ -5,6 +5,25 @@ public class Tarefa {
 	private String descricao;
 	private int prazo;
 	private boolean finalizada;
+	
+	public Tarefa () {
+		
+	}
+	
+	public Tarefa(int id, String descricao, int prazo, boolean finalizada) {
+		this.id = id;
+		this.descricao = descricao;
+		this.prazo = prazo;
+		this.finalizada = finalizada;
+	}
+	
+	public Tarefa(int id, String descricao, int prazo) {
+		this.id = id;
+		this.descricao = descricao;
+		this.prazo = prazo;
+		this.finalizada = false;
+	}
+	
 	public int getId() {
 		return id;
 	}
