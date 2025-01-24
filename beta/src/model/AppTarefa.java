@@ -2,21 +2,28 @@ package model;
 
 import java.util.Scanner;
 
+import controller.Controller;
+import view.Tela;
+
 public class AppTarefa {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		Tela tela = new Tela();
+		Controller controla = new Controller();
+		int opcao = 0;
 		
-		System.out.println("----MENU PRINCIPAL-----");
-		System.out.println("1 - Inclusão de Tarefa");
-		System.out.println("2 - Consulta de Tarefa");
-		System.out.println("3 - Alteração de Tarefa");
-		System.out.println("4 - Exclusão de Tarefa");
-		System.out.println("0 - F I M ");
-		System.out.println("Digite a opção desejada:");
-		int opcao = scanner.nextInt();
+		do {
+			tela.exibirMenu();
+			
+			opcao = scanner.nextInt();
+			
+			controla.verificarOpcao(opcao);
+			
+			
+		} while (opcao !=0);
 		
-
+		scanner.close();
 	}
 
 }
