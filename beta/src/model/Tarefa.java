@@ -23,7 +23,10 @@ public class Tarefa {
 		this.prazo = prazo;
 		this.finalizada = false;
 	}
-	
+	@Override
+	public String toString() {
+		return "Tarefa [id=" + id +", " + "descricao=" + descricao + ", " + " prazo= " +prazo + ", finalizada=" + finalizada +"]";
+	}
 	public int getId() {
 		return id;
 	}
